@@ -2,25 +2,35 @@
 
 import os
 import discord
-from discord.ext import commands
-
+import random
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix='!', intents=intents)
+
+client = discord.Client(intents=intents)
 
 
-@bot.event
+@client.event
 async def on_ready():
-    print(f"Logged in as {bot.user}")
+    print(f'We have logged in as {client.user}')
 
-@bot.command()
-async def ping(ctx):
-    await ctx.send('pong')
 
-@bot.command()
-async def hello(ctx):
-    await ctx.send("Choo choo! 🚅")
+@client.event
+async def on_message(message):
+
+    sayings = ['I love pancakes!', 'Go Warriors!',
+               'Spark! is the best place to work on campus.', 'West coast best coast.', 'The Mandalorian is the best Disney+']
+
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello!')
+
+    if message.content.startswith('$josh'):
+        saying = random.sample(sayings, 1)[0]
+        await message.channel.send(saying)
+
 
 
 bot.run(os.environ["DISCORD_TOKEN"])
