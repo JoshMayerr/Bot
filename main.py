@@ -33,4 +33,4 @@ async def on_message(message):
 
 
 
-bot.run(os.environ["DISCORD_TOKEN"])
+client.run(os.environ["DISCORD_TOKEN"])
