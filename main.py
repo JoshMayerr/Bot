@@ -27,9 +27,11 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
+
     if message.content.startswith('$josh'):
         saying = random.sample(sayings, 1)[0]
-        await message.channel.send(saying)
+        name = message.author.name
+        await message.channel.send("Hi " + name + "! " + saying)
 
 
 
