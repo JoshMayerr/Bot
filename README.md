@@ -1,21 +1,8 @@
----
-title: Discord Python bot
-description: A Discord bot written in Python
-tags:
-  - python
-  - discord.py
----
+## ✨ Features to be made
 
-# Discord.py Example
-
-This example starts a Discord bot using [discord.py](https://discordpy.readthedocs.io/en/stable/).
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/PxM3nl)
-
-## ✨ Features
-
-- Python
-- Discord.py
+- respond Hello {name} to command: `$hello`
+- respond with a randomly selected saying from a list of your creation to command: `$yourname`
+ex: $josh --> Hi Josh! I love pancakes.
 
 ## 💁‍♀️ How to use
 
@@ -24,4 +11,7 @@ This example starts a Discord bot using [discord.py](https://discordpy.readthedo
 
 ## 📝 Notes
 
-This is a basic bot with the prefix `!`, more information can be founded at their [offical documentation](https://discordpy.readthedocs.io/en/stable/api.html).
+Try out my bot in the Spark! Bots Discord server and add yours to the server also! 
+(https://discord.gg/byJ8RhR3Zh).
+
+This is a basic bot with the prefix `$`, more information can be founded at their [offical documentation](https://discordpy.readthedocs.io/en/stable/api.html).
