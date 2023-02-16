@@ -22,15 +22,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+#     enter you commands here
 
 
-    if message.content.startswith('$josh'):
-        saying = random.sample(sayings, 1)[0]
-        name = message.author.name
-        await message.channel.send("Hi " + name + "! " + saying)
-
-
-
-client.run(os.environ["DISCORD_TOKEN"])
+client.run(INSERT_TOKEN_HERE)
