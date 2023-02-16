@@ -1,8 +1,11 @@
-## ✨ Features to be made
+## ✨ Your challenge
 
+create a Discord bot that responds to the following commands:
 - respond Hello {name} to command: `$hello`
 - respond with a randomly selected saying from a list of your creation to command: `$yourname`
 ex: $josh --> Hi Josh! I love pancakes.
+
+More info on the challenge card!
 
 ## 💁‍♀️ How to use
 
